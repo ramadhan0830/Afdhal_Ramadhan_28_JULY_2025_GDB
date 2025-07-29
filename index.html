@@ -1,16 +1,63 @@
  <!DOCTYPE html>
 <html>
     <head>
-        <h1 style="text-align: center">Login</h1>
+        <title>Login</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color:   #0000FF;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .login-container {
+                background-color: white;
+                padding: 30px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0,,1);
+                widht:300px;
+                text-align: center;
+            }
+            
+            h1{
+                color: #333;
+                margin-bottom: 20px;
+            }
+            
+            input {
+                width: 100%;
+                padding: 10px;
+                border-radius:5px;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+            
+            button {
+                widht: 100%;
+                padding:10px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius:5px;
+                cursor: pointer;
+            }
+            
+            button:hover {
+                background-color: #45a049;
+            }
+        </style>
     </head>
     <body>
-        <div>
+        <div class="Login container">
             <form>
-        <input type="text" placeholder="masukan Username" style="width: 100%;padding 10px; margin: 10px; align: center" required /> <br />
-        <input type="pasword" placeholder="Masukan Password" style="width: 100%; padding 10px; margin: 10px; text-align: center"   >
-            <button type="submit" style="background-color: #5c9ded; padding 10px; margin: 10px; width: 100%">Login</button><br />
-            <p style="text-align: center">Belum punya akun ? <a class="" href="#" style="text-align: center">Daftar akun </a></p>
-                    </form>    
-                </div>
-            </body>
-        </html>
+        <input type="text" placeholder="masukan Username"  required /> <br />
+        <input type="pasword" placeholder="Masukan Password"    >
+        <button type="submit" style="background-color: #5c9ded; padding 10px; margin: 10px; width: 100%">Login</button><br />
+        <p >Belum punya akun ? <a class="" href="#" >Daftar akun </a></p>
+            </form>    
+        </div>
+    </body>
+</html>
